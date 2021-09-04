@@ -11,7 +11,7 @@ class Textbook {
 			int cs;
 			
 			while (true) {
-				input = JOptionPane.showInputDialog(" Enter 1 to add " + "\n Enter 2 to search  \n Enter 3 to edit " + "\n Enter 4 to Exit");
+				input = JOptionPane.showInputDialog(" Enter 1 to add " + "\n Enter 2 to search \n Enter 3 to Delete \n Enter 4 to Edit " + "\n Enter 5 to Exit");
 				cs = Integer.parseInt(input);
 				
 				switch (cs) {
@@ -23,15 +23,16 @@ class Textbook {
 					ab.searchPerson(s);
 					break;
 				case 3:
+					s=JOptionPane.showInputDialog("Enter name to delete");
+					ab.deletePerson(s);
+					break;
+				case 4:
 					s=JOptionPane.showInputDialog("Enter name to edit");
 					ab.editPerson(s);
 					break;	
-				case 4: System.exit(0);
+				case 5: System.exit(0);
 				}
 			}
-	}
-
+		}
 }
-
-
 
