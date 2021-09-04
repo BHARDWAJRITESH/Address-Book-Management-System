@@ -25,7 +25,7 @@ class Textbook {
 				case 3: System.exit(0);
 				}
 			}
-		}
+	}
 
 }
 
